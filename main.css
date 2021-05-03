@@ -89,7 +89,10 @@ body {
 .button:active {
     background-color: #fff;
     color: #0e4f1f;
-    outline: none;
+}
+
+.button:focus {
+  outline: none;
 }
 
 /* h1 {
