@@ -30,6 +30,13 @@
     }
 }
 
+@media (min-width: 60rem) {
+    #product-overview {
+        height: 50vh;
+        background-position: 50% 25%;
+    }
+}
+
 .section-title {
     color: #2ddf5c;
     text-align: center;
