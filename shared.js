@@ -10,12 +10,18 @@ const closeModal = () => {
     modal.classList.remove('open');
   }
   backdrop.classList.remove('open');
+  setTimeout(function() {
+    backdrop.style.display = 'none';
+  }, 200);
 }
 
 for (var i = 0; i < selectPlanButtons.length; i++) {
   selectPlanButtons[i].addEventListener('click', () => {
     modal.classList.add('open');
-    backdrop.classList.add('open');
+    backdrop.style.display = 'block';
+    setTimeout(function() {
+      backdrop.classList.add('open');
+    }, 10);
   });
 }
 
@@ -30,5 +36,8 @@ if (modalNoButton) {
 
 toggleButton.addEventListener('click', () => {
   mobileNav.classList.add('open');
-  backdrop.classList.add('open');
+  backdrop.style.display = 'block';
+  setTimeout(function() {
+    backdrop.classList.add('open');
+  }, 10);
 });
